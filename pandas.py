@@ -9,3 +9,7 @@ df[(df['col 1'] == num_1) | (df['col 2'] == num_2)] # or operation
 
 # negate a boolean filter
 df[~(df['col'] == num)]
+
+# sample dataframe
+df.sample(n=2)
+df.sample(frac=0.5)
