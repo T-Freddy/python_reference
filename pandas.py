@@ -17,3 +17,6 @@ df.sample(frac=0.5)
 # specify column names from multiindex
 multiindex_level = -1 #e.g.
 df.columns.levels[multiindex_level]
+
+# convert Dataframe to Dictionary where key is (row index, column name)
+df.stack().to_dict()
