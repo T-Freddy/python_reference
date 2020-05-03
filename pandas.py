@@ -13,3 +13,7 @@ df[~(df['col'] == num)]
 # sample dataframe
 df.sample(n=2)
 df.sample(frac=0.5)
+
+# specify column names from multiindex
+multiindex_level = -1 #e.g.
+df.columns.levels[multiindex_level]
